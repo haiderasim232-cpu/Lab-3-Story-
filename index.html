@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream / Memory — The Power of Sequencing</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">The Power of Sequencing</p>
+    <h1>Dream / Memory</h1>
+    <p>Three images. Two stories. A different perspective.</p>
+  </header>
+  <main>
+    <section class="controls" aria-labelledby="choose-heading">
+      <h2 id="choose-heading">Choose your story</h2>
+      <p>Read the images from beginning to end, then switch the order.</p>
+      <div class="buttons">
+        <button id="escape-button" type="button" aria-pressed="true">
+          The Escape
+        </button>
+        <button id="reality-button" type="button" aria-pressed="false">
+          Back to Reality
+        </button>
+      </div>
+    </section>
+    <section class="story" aria-labelledby="story-title">
+      <div class="story-introduction" aria-live="polite">
+        <h2 id="story-title">The Escape</h2>
+        <p id="story-description">
+          Everyday routine gives way to adventure.
+          A flight carries someone away from their desk
+          and toward a peaceful beach holiday.
+        </p>
+      </div>
+      <div class="sequence">
+        <figure class="image-card">
+          <h3>01 / Beginning</h3>
+          <img
+            id="beginning-image"
+            src="images/desk.jpg"
+            alt="A person working at a desk"
+          >
+          <figcaption id="beginning-caption">
+            The everyday routine.
+          </figcaption>
+        </figure>
+        <figure class="image-card">
+          <h3>02 / Middle</h3>
+          <img
+            id="middle-image"
+            src="images/airplane.jpg"
+            alt="A view from an airplane window"
+          >
+          <figcaption id="middle-caption">
+            A journey away.
+          </figcaption>
+        </figure>
+        <figure class="image-card">
+          <h3>03 / End</h3>
+          <img
+            id="end-image"
+            src="images/beach.jpg"
+            alt="A peaceful beach scene"
+          >
+          <figcaption id="end-caption">
+            A chance to escape.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="reflection" aria-labelledby="reflection-heading">
+      <h2 id="reflection-heading">What changes when the order changes?</h2>
+      <p>
+        The airplane can represent an exciting departure or a journey
+        home. The desk can be the routine someone leaves behind or
+        the reality they return to. The images stay the same,
+        but their place in the story changes their meaning.
+      </p>
+    </section>
+  </main>
+  <footer>
+    <p>Dream / Memory · An interactive story in three images.</p>
+  </footer>
+</body>
+</html>
